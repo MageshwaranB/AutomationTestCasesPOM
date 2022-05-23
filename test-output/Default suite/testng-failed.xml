@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testcases.BasketPageTest">
+      <class name="com.testcases.HomePageTest">
         <methods>
-          <include name="close"/>
-          <include name="couponTest"/>
+          <include name="addToBasketWithErrorTest"/>
           <include name="setup"/>
+          <include name="setupClose"/>
         </methods>
-      </class> <!-- com.testcases.BasketPageTest -->
+      </class> <!-- com.testcases.HomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

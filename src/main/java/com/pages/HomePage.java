@@ -212,41 +212,52 @@ public class HomePage extends TestBase {
 		public boolean addingToBasketWithErrors() {
 			verifyingExistenceOfArrivals();
 			image3.click();
-			String arr[]=stock.getText().split(" ");
-			Integer stockValue=Integer.parseInt(arr[0]);
-			int modifyStockValue=stockValue+1;
+			boolean confirmationMessage=false;
+			while(!driver.getPageSource().contains("Out of stock")) {
+				if(driver.getPageSource().contains("Out of stock")) {
+					break;
+				}
+				else {
+					String arr[]=stock.getText().split(" ");
+					Integer stockValue=Integer.parseInt(arr[0]);
+					int modifyStockValue=stockValue+1;
+					
+					for (int i = stockValue; i <=modifyStockValue; i++) {
+						if(i<modifyStockValue)
+						{
+							try {
+								quantityTxt.clear();
+								quantityTxt.sendKeys(stockValue.toString());
+								addToBasketBtn.click();
+								
+							} catch (StaleElementReferenceException e) {
+								addToBasketBtn=driver.findElement(By.xpath("//button[@type='submit']"));
+								quantityTxt=driver.findElement(By.xpath("//input[@name='quantity']"));
+								quantityTxt.clear();
+								errorStockMessage=driver.findElement(By.xpath("(//*[contains(text(),'You cannot add')])"));
+							}
+						}
+						else
+						{
+							quantityTxt.clear();
+							Integer value=1;
+							quantityTxt.sendKeys(value.toString());
+							addToBasketBtn.click();
+							}
+						}
+					if(errorStockMessage.getText().contains(arr[0]))
+					{
+						confirmationMessage=errorStockMessage.isDisplayed();
+					}
+					else
+						confirmationMessage=false;
+					}
+				break;
+				}
+			return confirmationMessage;
+			}
 			
-			for (int i = stockValue; i <=modifyStockValue; i++) {
-				if(i<modifyStockValue)
-				{
-					try {
-						quantityTxt.clear();
-						quantityTxt.sendKeys(stockValue.toString());
-						addToBasketBtn.click();
-						
-					} catch (StaleElementReferenceException e) {
-						addToBasketBtn=driver.findElement(By.xpath("//button[@type='submit']"));
-						quantityTxt=driver.findElement(By.xpath("//input[@name='quantity']"));
-						quantityTxt.clear();
-						errorStockMessage=driver.findElement(By.xpath("(//*[contains(text(),'You cannot add')])"));
-					}
-				}
-				else
-				{
-					quantityTxt.clear();
-					Integer value=1;
-					quantityTxt.sendKeys(value.toString());
-					addToBasketBtn.click();
-					}
-				}
-			if(errorStockMessage.getText().contains(arr[0]))
-			{
-				return errorStockMessage.isDisplayed();
-			}
-			else
-				return false;
-			}
-		
+				
 		public int navigateToBasketPage(int i) {
 			verifyingExistenceOfArrivals();
 				allImages.get(i).click();
