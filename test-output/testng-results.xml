@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="5" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="5" passed="3" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-05-23T13:45:50 IST" name="Default suite" finished-at="2022-05-23T13:46:10 IST" duration-ms="19892">
+  <suite started-at="2022-06-30T12:30:07 IST" name="Suite" finished-at="2022-06-30T12:33:07 IST" duration-ms="180565">
     <groups>
     </groups>
-    <test started-at="2022-05-23T13:45:50 IST" name="Default test" finished-at="2022-05-23T13:46:10 IST" duration-ms="19892">
+    <test started-at="2022-06-30T12:30:07 IST" name="Test" finished-at="2022-06-30T12:33:07 IST" duration-ms="180565">
       <class name="com.testcases.HomePageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testcases.HomePageTest@50b5ac82]" started-at="2022-05-23T13:45:50 IST" name="setup" finished-at="2022-05-23T13:46:02 IST" duration-ms="11741" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.testcases.HomePageTest@14555e0a]" started-at="2022-06-30T12:30:07 IST" name="setup" finished-at="2022-06-30T12:30:21 IST" duration-ms="13589" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="addToBasketWithErrorTest()[pri:0, instance:com.testcases.HomePageTest@50b5ac82]" started-at="2022-05-23T13:46:02 IST" name="addToBasketWithErrorTest" finished-at="2022-05-23T13:46:10 IST" duration-ms="7819" status="FAIL">
+        <test-method signature="addToBasketWithErrorTest()[pri:0, instance:com.testcases.HomePageTest@14555e0a]" started-at="2022-06-30T12:30:21 IST" name="addToBasketWithErrorTest" finished-at="2022-06-30T12:30:34 IST" duration-ms="13092" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Test case is failed expected [true] but found [false]]]>
@@ -58,11 +58,102 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addToBasketWithErrorTest -->
-        <test-method is-config="true" signature="setupClose()[pri:0, instance:com.testcases.HomePageTest@50b5ac82]" started-at="2022-05-23T13:46:10 IST" name="setupClose" finished-at="2022-05-23T13:46:10 IST" duration-ms="216" status="PASS">
+        <test-method is-config="true" signature="setupClose()[pri:0, instance:com.testcases.HomePageTest@14555e0a]" started-at="2022-06-30T12:30:34 IST" name="setupClose" finished-at="2022-06-30T12:30:34 IST" duration-ms="137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupClose -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.testcases.HomePageTest@14555e0a]" started-at="2022-06-30T12:30:34 IST" name="setup" finished-at="2022-06-30T12:30:50 IST" duration-ms="15170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="arrivalsIsDisplayedTest()[pri:0, instance:com.testcases.HomePageTest@14555e0a]" started-at="2022-06-30T12:30:50 IST" name="arrivalsIsDisplayedTest" finished-at="2022-06-30T12:31:04 IST" duration-ms="14172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- arrivalsIsDisplayedTest -->
+        <test-method is-config="true" signature="setupClose()[pri:0, instance:com.testcases.HomePageTest@14555e0a]" started-at="2022-06-30T12:31:04 IST" name="setupClose" finished-at="2022-06-30T12:31:04 IST" duration-ms="138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupClose -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.testcases.HomePageTest@14555e0a]" started-at="2022-06-30T12:31:04 IST" name="setup" finished-at="2022-06-30T12:31:15 IST" duration-ms="10809" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="descriptionValidationTest()[pri:0, instance:com.testcases.HomePageTest@14555e0a]" started-at="2022-06-30T12:31:15 IST" name="descriptionValidationTest" finished-at="2022-06-30T12:31:51 IST" duration-ms="36312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- descriptionValidationTest -->
+        <test-method is-config="true" signature="setupClose()[pri:0, instance:com.testcases.HomePageTest@14555e0a]" started-at="2022-06-30T12:31:51 IST" name="setupClose" finished-at="2022-06-30T12:31:51 IST" duration-ms="291" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupClose -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.testcases.HomePageTest@14555e0a]" started-at="2022-06-30T12:31:51 IST" name="setup" finished-at="2022-06-30T12:32:05 IST" duration-ms="13846" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="imagesIsDisplayedTest()[pri:0, instance:com.testcases.HomePageTest@14555e0a]" started-at="2022-06-30T12:32:05 IST" name="imagesIsDisplayedTest" finished-at="2022-06-30T12:32:20 IST" duration-ms="14957" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- imagesIsDisplayedTest -->
+        <test-method is-config="true" signature="setupClose()[pri:0, instance:com.testcases.HomePageTest@14555e0a]" started-at="2022-06-30T12:32:20 IST" name="setupClose" finished-at="2022-06-30T12:32:20 IST" duration-ms="135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupClose -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.testcases.HomePageTest@14555e0a]" started-at="2022-06-30T12:32:20 IST" name="setup" finished-at="2022-06-30T12:32:35 IST" duration-ms="14603" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="navigateBackAndForthTest()[pri:0, instance:com.testcases.HomePageTest@14555e0a]" started-at="2022-06-30T12:32:35 IST" name="navigateBackAndForthTest" finished-at="2022-06-30T12:33:07 IST" duration-ms="31853" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Testcase is failed expected [All books have been added and navigated back successfully] but found [Few books are out of books]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Testcase is failed expected [All books have been added and navigated back successfully] but found [Few books are out of books]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at com.testcases.HomePageTest.navigateBackAndForthTest(HomePageTest.java:48)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateBackAndForthTest -->
+        <test-method is-config="true" signature="setupClose()[pri:0, instance:com.testcases.HomePageTest@14555e0a]" started-at="2022-06-30T12:33:07 IST" name="setupClose" finished-at="2022-06-30T12:33:07 IST" duration-ms="305" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupClose -->
       </class> <!-- com.testcases.HomePageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
