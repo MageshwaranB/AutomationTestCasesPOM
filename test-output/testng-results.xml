@@ -1,29 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="3" failed="2" skipped="0">
+<testng-results ignored="5" total="6" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-30T12:30:07 IST" name="Suite" finished-at="2022-06-30T12:33:07 IST" duration-ms="180565">
+  <suite started-at="2022-07-07T10:42:09 IST" name="Default suite" finished-at="2022-07-07T10:42:55 IST" duration-ms="45697">
     <groups>
     </groups>
-    <test started-at="2022-06-30T12:30:07 IST" name="Test" finished-at="2022-06-30T12:33:07 IST" duration-ms="180565">
-      <class name="com.testcases.HomePageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testcases.HomePageTest@14555e0a]" started-at="2022-06-30T12:30:07 IST" name="setup" finished-at="2022-06-30T12:30:21 IST" duration-ms="13589" status="PASS">
+    <test started-at="2022-07-07T10:42:09 IST" name="Default test" finished-at="2022-07-07T10:42:55 IST" duration-ms="45697">
+      <class name="com.testcases.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.testcases.LoginTest@37c2eacb]" started-at="2022-07-07T10:42:09 IST" name="setup" finished-at="2022-07-07T10:42:39 IST" duration-ms="29615" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="addToBasketWithErrorTest()[pri:0, instance:com.testcases.HomePageTest@14555e0a]" started-at="2022-06-30T12:30:21 IST" name="addToBasketWithErrorTest" finished-at="2022-06-30T12:30:34 IST" duration-ms="13092" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="authenticationTest()[pri:0, instance:com.testcases.LoginTest@37c2eacb]" started-at="2022-07-07T10:42:40 IST" name="authenticationTest" finished-at="2022-07-07T10:42:47 IST" duration-ms="7465" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Test case is failed expected [true] but found [false]]]>
+              <![CDATA[unknown error: cannot determine loading status
+from unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.114)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-UOSJI6I', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Makesh\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:2606}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fa80e570be18d6979e85d9e6ac5b150e]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Test case is failed expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:819)
-at com.testcases.HomePageTest.addToBasketWithErrorTest(HomePageTest.java:64)
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.114)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-UOSJI6I', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Makesh\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:2606}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fa80e570be18d6979e85d9e6ac5b150e
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy13.click(Unknown Source)
+at com.pages.LoginPage.authentication(LoginPage.java:127)
+at com.testcases.LoginTest.authenticationTest(LoginTest.java:63)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -54,106 +82,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addToBasketWithErrorTest -->
-        <test-method is-config="true" signature="setupClose()[pri:0, instance:com.testcases.HomePageTest@14555e0a]" started-at="2022-06-30T12:30:34 IST" name="setupClose" finished-at="2022-06-30T12:30:34 IST" duration-ms="137" status="PASS">
+        </test-method> <!-- authenticationTest -->
+        <test-method is-config="true" signature="closeSetup()[pri:0, instance:com.testcases.LoginTest@37c2eacb]" started-at="2022-07-07T10:42:47 IST" name="closeSetup" finished-at="2022-07-07T10:42:55 IST" duration-ms="7905" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupClose -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testcases.HomePageTest@14555e0a]" started-at="2022-06-30T12:30:34 IST" name="setup" finished-at="2022-06-30T12:30:50 IST" duration-ms="15170" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="arrivalsIsDisplayedTest()[pri:0, instance:com.testcases.HomePageTest@14555e0a]" started-at="2022-06-30T12:30:50 IST" name="arrivalsIsDisplayedTest" finished-at="2022-06-30T12:31:04 IST" duration-ms="14172" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- arrivalsIsDisplayedTest -->
-        <test-method is-config="true" signature="setupClose()[pri:0, instance:com.testcases.HomePageTest@14555e0a]" started-at="2022-06-30T12:31:04 IST" name="setupClose" finished-at="2022-06-30T12:31:04 IST" duration-ms="138" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupClose -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testcases.HomePageTest@14555e0a]" started-at="2022-06-30T12:31:04 IST" name="setup" finished-at="2022-06-30T12:31:15 IST" duration-ms="10809" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="descriptionValidationTest()[pri:0, instance:com.testcases.HomePageTest@14555e0a]" started-at="2022-06-30T12:31:15 IST" name="descriptionValidationTest" finished-at="2022-06-30T12:31:51 IST" duration-ms="36312" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- descriptionValidationTest -->
-        <test-method is-config="true" signature="setupClose()[pri:0, instance:com.testcases.HomePageTest@14555e0a]" started-at="2022-06-30T12:31:51 IST" name="setupClose" finished-at="2022-06-30T12:31:51 IST" duration-ms="291" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupClose -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testcases.HomePageTest@14555e0a]" started-at="2022-06-30T12:31:51 IST" name="setup" finished-at="2022-06-30T12:32:05 IST" duration-ms="13846" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="imagesIsDisplayedTest()[pri:0, instance:com.testcases.HomePageTest@14555e0a]" started-at="2022-06-30T12:32:05 IST" name="imagesIsDisplayedTest" finished-at="2022-06-30T12:32:20 IST" duration-ms="14957" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- imagesIsDisplayedTest -->
-        <test-method is-config="true" signature="setupClose()[pri:0, instance:com.testcases.HomePageTest@14555e0a]" started-at="2022-06-30T12:32:20 IST" name="setupClose" finished-at="2022-06-30T12:32:20 IST" duration-ms="135" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupClose -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testcases.HomePageTest@14555e0a]" started-at="2022-06-30T12:32:20 IST" name="setup" finished-at="2022-06-30T12:32:35 IST" duration-ms="14603" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="navigateBackAndForthTest()[pri:0, instance:com.testcases.HomePageTest@14555e0a]" started-at="2022-06-30T12:32:35 IST" name="navigateBackAndForthTest" finished-at="2022-06-30T12:33:07 IST" duration-ms="31853" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Testcase is failed expected [All books have been added and navigated back successfully] but found [Few books are out of books]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Testcase is failed expected [All books have been added and navigated back successfully] but found [Few books are out of books]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at com.testcases.HomePageTest.navigateBackAndForthTest(HomePageTest.java:48)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateBackAndForthTest -->
-        <test-method is-config="true" signature="setupClose()[pri:0, instance:com.testcases.HomePageTest@14555e0a]" started-at="2022-06-30T12:33:07 IST" name="setupClose" finished-at="2022-06-30T12:33:07 IST" duration-ms="305" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupClose -->
-      </class> <!-- com.testcases.HomePageTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- closeSetup -->
+      </class> <!-- com.testcases.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
