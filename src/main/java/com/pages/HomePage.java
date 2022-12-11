@@ -117,6 +117,7 @@ public class HomePage extends TestBase {
 	}
 
 	public String verifyingExistenceOfArrivals() {
+
 		wait.until(ExpectedConditions.visibilityOf(mainArrivals));
 		scroll.scrollingToThatElement(mainArrivals);
 		elements = allArrivals;
@@ -154,7 +155,7 @@ public class HomePage extends TestBase {
 
 			return "All books have been added and navigated back successfully";
 		} else {
-			return "Few books are out of books";
+			return "Few books are out of stocks";
 		}
 	}
 	
