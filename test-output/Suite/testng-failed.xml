@@ -8,12 +8,25 @@
     <classes>
       <class name="com.testcases.HomePageTest">
         <methods>
-          <include name="addToBasketWithErrorTest"/>
           <include name="navigateBackAndForthTest"/>
           <include name="setup"/>
           <include name="setupClose"/>
         </methods>
       </class> <!-- com.testcases.HomePageTest -->
+      <class name="com.testcases.BasketPageTest">
+        <methods>
+          <include name="close"/>
+          <include name="couponTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.testcases.BasketPageTest -->
+      <class name="com.testcases.LoginTest">
+        <methods>
+          <include name="loginWithCredentials" invocation-numbers="1 7"/>
+          <include name="closeSetup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.testcases.LoginTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

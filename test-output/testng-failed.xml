@@ -5,7 +5,7 @@
     <classes>
       <class name="com.testcases.LoginTest">
         <methods>
-          <include name="authenticationTest"/>
+          <include name="loginWithCredentials" invocation-numbers="1 7"/>
           <include name="closeSetup"/>
           <include name="setup"/>
         </methods>

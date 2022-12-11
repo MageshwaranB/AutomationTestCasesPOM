@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>15/4/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jun 30 12:30:07 IST 2022</td>
+<td>Started on:</td><td>Sun Dec 11 16:19:05 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>180 seconds (180565 ms)</td>
+<tr><td>Total time:</td><td>723 seconds (723092 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,12 +75,99 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='com.testcases.LoginTest.loginWithCredentials()'><b>loginWithCredentials</b><br>Test class: com.testcases.LoginTest<br>Parameters: mAgeShBalRaj@gmail.com, buRiBUri@007</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//strong[text()=&apos;ERROR&apos;]&quot;}
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-UOSJI6I&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Makesh\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:9829}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 08028408cd74c476527ae44b35236438
+*** Element info: {Using=xpath, value=//strong[text()=&apos;ERROR&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy14.getText(Unknown Source)
+	at com.pages.LoginPage.loginIntoAccount(LoginPage.java:93)
+	at com.testcases.LoginTest.loginWithCredentials(LoginTest.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace661309772", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace661309772'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//strong[text()=&apos;ERROR&apos;]&quot;}
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-UOSJI6I&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Makesh\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:9829}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 08028408cd74c476527ae44b35236438
+*** Element info: {Using=xpath, value=//strong[text()=&apos;ERROR&apos;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy14.getText(Unknown Source)
+	at com.pages.LoginPage.loginIntoAccount(LoginPage.java:93)
+	at com.testcases.LoginTest.loginWithCredentials(LoginTest.java:57)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>20</td>
+<td>com.testcases.LoginTest@54aca26f</td></tr>
+<tr>
 <td title='com.testcases.HomePageTest.navigateBackAndForthTest()'><b>navigateBackAndForthTest</b><br>Test class: com.testcases.HomePageTest</td>
-<td><div><pre>java.lang.AssertionError: Testcase is failed expected [All books have been added and navigated back successfully] but found [Few books are out of books]
+<td><div><pre>java.lang.AssertionError: Testcase is failed expected [All books have been added and navigated back successfully] but found [Few books are out of stocks]
 	at com.testcases.HomePageTest.navigateBackAndForthTest(HomePageTest.java:48)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace161069393", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace161069393'><pre>java.lang.AssertionError: Testcase is failed expected [All books have been added and navigated back successfully] but found [Few books are out of books]
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace914718002", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace914718002'><pre>java.lang.AssertionError: Testcase is failed expected [All books have been added and navigated back successfully] but found [Few books are out of stocks]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
@@ -116,21 +203,64 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>31</td>
-<td>com.testcases.HomePageTest@14555e0a</td></tr>
+<td>11</td>
+<td>com.testcases.HomePageTest@1f52eb6f</td></tr>
 <tr>
-<td title='com.testcases.HomePageTest.addToBasketWithErrorTest()'><b>addToBasketWithErrorTest</b><br>Test class: com.testcases.HomePageTest</td>
-<td><div><pre>java.lang.AssertionError: Test case is failed expected [true] but found [false]
-	at com.testcases.HomePageTest.addToBasketWithErrorTest(HomePageTest.java:64)
+<td title='com.testcases.LoginTest.loginWithCredentials()'><b>loginWithCredentials</b><br>Test class: com.testcases.LoginTest<br>Parameters: mageshbalraj@gmail.com, abac</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//strong[text()=&apos;ERROR&apos;]&quot;}
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-UOSJI6I&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Makesh\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:9270}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8ad5724cf2160a83bc9375583fbde08e
+*** Element info: {Using=xpath, value=//strong[text()=&apos;ERROR&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy14.getText(Unknown Source)
+	at com.pages.LoginPage.loginIntoAccount(LoginPage.java:85)
+	at com.testcases.LoginTest.loginWithCredentials(LoginTest.java:57)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1750563752", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1750563752'><pre>java.lang.AssertionError: Test case is failed expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:819)
-	at com.testcases.HomePageTest.addToBasketWithErrorTest(HomePageTest.java:64)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace725491769", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace725491769'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//strong[text()=&apos;ERROR&apos;]&quot;}
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-UOSJI6I&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Makesh\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:9270}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8ad5724cf2160a83bc9375583fbde08e
+*** Element info: {Using=xpath, value=//strong[text()=&apos;ERROR&apos;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy14.getText(Unknown Source)
+	at com.pages.LoginPage.loginIntoAccount(LoginPage.java:85)
+	at com.testcases.LoginTest.loginWithCredentials(LoginTest.java:57)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -160,8 +290,44 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>13</td>
-<td>com.testcases.HomePageTest@14555e0a</td></tr>
+<td>19</td>
+<td>com.testcases.LoginTest@54aca26f</td></tr>
+<tr>
+<td title='com.testcases.BillingPageTest.billingTest()'><b>billingTest</b><br>Test class: com.testcases.BillingPageTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Data Provider public java.lang.String[][] com.testcases.BillingPageTest.provideData() returned a null value
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace270966801", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace270966801'><pre>org.testng.TestNGException: 
+Data Provider public java.lang.String[][] com.testcases.BillingPageTest.provideData() returned a null value
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:148)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:798)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.testcases.BillingPageTest@314ed053</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -171,20 +337,80 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='com.testcases.LoginTest.loginWithCredentials()'><b>loginWithCredentials</b><br>Test class: com.testcases.LoginTest<br>Parameters: , </td>
+<td></td>
+<td>10</td>
+<td>com.testcases.LoginTest@54aca26f</td></tr>
+<tr>
+<td title='com.testcases.LoginTest.maskingPasswordTest()'><b>maskingPasswordTest</b><br>Test class: com.testcases.LoginTest</td>
+<td></td>
+<td>2</td>
+<td>com.testcases.LoginTest@54aca26f</td></tr>
+<tr>
 <td title='com.testcases.HomePageTest.imagesIsDisplayedTest()'><b>imagesIsDisplayedTest</b><br>Test class: com.testcases.HomePageTest</td>
 <td></td>
-<td>14</td>
-<td>com.testcases.HomePageTest@14555e0a</td></tr>
+<td>4</td>
+<td>com.testcases.HomePageTest@1f52eb6f</td></tr>
 <tr>
-<td title='com.testcases.HomePageTest.arrivalsIsDisplayedTest()'><b>arrivalsIsDisplayedTest</b><br>Test class: com.testcases.HomePageTest</td>
+<td title='com.testcases.LoginTest.loginWithCredentials()'><b>loginWithCredentials</b><br>Test class: com.testcases.LoginTest<br>Parameters: mageshbalraj@gmail.com, </td>
 <td></td>
-<td>14</td>
-<td>com.testcases.HomePageTest@14555e0a</td></tr>
+<td>9</td>
+<td>com.testcases.LoginTest@54aca26f</td></tr>
+<tr>
+<td title='com.testcases.LoginTest.loginWithCredentials()'><b>loginWithCredentials</b><br>Test class: com.testcases.LoginTest<br>Parameters: mmmmm@gmail.com, bbcb</td>
+<td></td>
+<td>8</td>
+<td>com.testcases.LoginTest@54aca26f</td></tr>
 <tr>
 <td title='com.testcases.HomePageTest.descriptionValidationTest()'><b>descriptionValidationTest</b><br>Test class: com.testcases.HomePageTest</td>
 <td></td>
-<td>36</td>
-<td>com.testcases.HomePageTest@14555e0a</td></tr>
+<td>9</td>
+<td>com.testcases.HomePageTest@1f52eb6f</td></tr>
+<tr>
+<td title='com.testcases.LoginTest.loginWithCredentials()'><b>loginWithCredentials</b><br>Test class: com.testcases.LoginTest<br>Parameters: , BuriBuri@007</td>
+<td></td>
+<td>11</td>
+<td>com.testcases.LoginTest@54aca26f</td></tr>
+<tr>
+<td title='com.testcases.LoginTest.authenticationTest()'><b>authenticationTest</b><br>Test class: com.testcases.LoginTest</td>
+<td></td>
+<td>10</td>
+<td>com.testcases.LoginTest@54aca26f</td></tr>
+<tr>
+<td title='com.testcases.LoginTest.loginWithCredentials()'><b>loginWithCredentials</b><br>Test class: com.testcases.LoginTest<br>Parameters: kjkhjgj@gmail.com, BuriBuri@007</td>
+<td></td>
+<td>8</td>
+<td>com.testcases.LoginTest@54aca26f</td></tr>
+<tr>
+<td title='com.testcases.LoginTest.insertOnlyValidPassword()'><b>insertOnlyValidPassword</b><br>Test class: com.testcases.LoginTest</td>
+<td></td>
+<td>10</td>
+<td>com.testcases.LoginTest@54aca26f</td></tr>
+<tr>
+<td title='com.testcases.LoginTest.loginWithCredentials()'><b>loginWithCredentials</b><br>Test class: com.testcases.LoginTest<br>Parameters: mageshbalraj@gmail.com, BuriBuri@007</td>
+<td></td>
+<td>13</td>
+<td>com.testcases.LoginTest@54aca26f</td></tr>
+<tr>
+<td title='com.testcases.HomePageTest.addToBasketWithErrorTest()'><b>addToBasketWithErrorTest</b><br>Test class: com.testcases.HomePageTest</td>
+<td></td>
+<td>8</td>
+<td>com.testcases.HomePageTest@1f52eb6f</td></tr>
+<tr>
+<td title='com.testcases.LoginTest.registrationDetailsTest()'><b>registrationDetailsTest</b><br>Test class: com.testcases.LoginTest</td>
+<td></td>
+<td>16</td>
+<td>com.testcases.LoginTest@54aca26f</td></tr>
+<tr>
+<td title='com.testcases.HomePageTest.arrivalsIsDisplayedTest()'><b>arrivalsIsDisplayedTest</b><br>Test class: com.testcases.HomePageTest</td>
+<td></td>
+<td>3</td>
+<td>com.testcases.HomePageTest@1f52eb6f</td></tr>
+<tr>
+<td title='com.testcases.LoginTest.passwordStrengthTest()'><b>passwordStrengthTest</b><br>Test class: com.testcases.LoginTest</td>
+<td></td>
+<td>6</td>
+<td>com.testcases.LoginTest@54aca26f</td></tr>
 </table><p>
 </body>
 </html>
